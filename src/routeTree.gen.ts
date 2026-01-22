@@ -9,8 +9,44 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WhatIsTetherRouteImport } from './routes/what-is-tether'
+import { Route as ValidationPrivateRouteImport } from './routes/validation-private'
+import { Route as GettingStartedRouteImport } from './routes/getting-started'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BlogRouteImport } from './routes/blog'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const WhatIsTetherRoute = WhatIsTetherRouteImport.update({
+  id: '/what-is-tether',
+  path: '/what-is-tether',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ValidationPrivateRoute = ValidationPrivateRouteImport.update({
+  id: '/validation-private',
+  path: '/validation-private',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GettingStartedRoute = GettingStartedRouteImport.update({
+  id: '/getting-started',
+  path: '/getting-started',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +55,116 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
+  '/getting-started': typeof GettingStartedRoute
+  '/validation-private': typeof ValidationPrivateRoute
+  '/what-is-tether': typeof WhatIsTetherRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
+  '/getting-started': typeof GettingStartedRoute
+  '/validation-private': typeof ValidationPrivateRoute
+  '/what-is-tether': typeof WhatIsTetherRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
+  '/getting-started': typeof GettingStartedRoute
+  '/validation-private': typeof ValidationPrivateRoute
+  '/what-is-tether': typeof WhatIsTetherRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/contact'
+    | '/getting-started'
+    | '/validation-private'
+    | '/what-is-tether'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/contact'
+    | '/getting-started'
+    | '/validation-private'
+    | '/what-is-tether'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/contact'
+    | '/getting-started'
+    | '/validation-private'
+    | '/what-is-tether'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BlogRoute: typeof BlogRoute
+  ContactRoute: typeof ContactRoute
+  GettingStartedRoute: typeof GettingStartedRoute
+  ValidationPrivateRoute: typeof ValidationPrivateRoute
+  WhatIsTetherRoute: typeof WhatIsTetherRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/what-is-tether': {
+      id: '/what-is-tether'
+      path: '/what-is-tether'
+      fullPath: '/what-is-tether'
+      preLoaderRoute: typeof WhatIsTetherRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/validation-private': {
+      id: '/validation-private'
+      path: '/validation-private'
+      fullPath: '/validation-private'
+      preLoaderRoute: typeof ValidationPrivateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/getting-started': {
+      id: '/getting-started'
+      path: '/getting-started'
+      fullPath: '/getting-started'
+      preLoaderRoute: typeof GettingStartedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +177,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BlogRoute: BlogRoute,
+  ContactRoute: ContactRoute,
+  GettingStartedRoute: GettingStartedRoute,
+  ValidationPrivateRoute: ValidationPrivateRoute,
+  WhatIsTetherRoute: WhatIsTetherRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

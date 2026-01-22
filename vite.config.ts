@@ -12,12 +12,17 @@ const config = defineConfig({
         }),
         tailwindcss(),
         tanstackStart({
+            sitemap: {
+                enabled: true,
+                host: "fgh.donutsloth.net",
+                outputPath: "sitemap.xml"
+            },
             prerender: {
                 // Enable prerendering
                 enabled: true,
 
                 // Enable if you need pages to be at `/page/index.html` instead of `/page.html`
-                autoSubfolderIndex: false,
+                autoSubfolderIndex: true,
 
                 // How many prerender jobs to run at once
                 concurrency: 14,
