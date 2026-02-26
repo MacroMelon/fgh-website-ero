@@ -32,7 +32,7 @@ export const Route = createRootRoute({
             },
             {
                 property: 'og:image',
-                content: 'https://fgh.donutsloth.net/logo-long.png'
+                content: 'https://tether.donutsloth.net/logo-long.png'
             },
             {
                 property: 'og:image:type',
@@ -40,7 +40,7 @@ export const Route = createRootRoute({
             },
             {
                 property: 'og:logo',
-                content: 'https://fgh.donutsloth.net/logo.png'
+                content: 'https://tether.donutsloth.net/logo.png'
             },
             {
                 property: 'og:logo:type',
@@ -48,7 +48,7 @@ export const Route = createRootRoute({
             },
             {
                 property: 'og:url',
-                content: 'https://fgh.donutsloth.net/'
+                content: 'https://tether.donutsloth.net/'
             },
             {
                 property: 'og:type',

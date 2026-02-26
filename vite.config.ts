@@ -14,7 +14,7 @@ const config = defineConfig({
         tanstackStart({
             sitemap: {
                 enabled: true,
-                host: "fgh.donutsloth.net",
+                host: "tether.donutsloth.net",
                 outputPath: "sitemap.xml"
             },
             prerender: {
