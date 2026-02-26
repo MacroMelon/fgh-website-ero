@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Nico Moji';
-  src: url('http://127.0.0.1:3000/fonts/NicoMoji-Regular.woff2') format('woff2'),
-  url('http://127.0.0.1:3000/fonts/NicoMoji-Regular.woff') format('woff');
+  src: url('/fonts/NicoMoji-Regular.woff2') format('woff2'),
+  url('/fonts/NicoMoji-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

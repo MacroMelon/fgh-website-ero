@@ -7,7 +7,7 @@ function App() {
     return (
         <div>
             <div className="font-[Nico_Moji] text-3xl">
-                Test
+                Tether
             </div>
         </div>
     )
