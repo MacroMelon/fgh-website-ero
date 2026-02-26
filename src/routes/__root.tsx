@@ -1,6 +1,7 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 
 import Header from '../components/Header'
+import Footer from "@/components/Footer.tsx";
 
 import appCss from '../styles.css?url'
 
@@ -15,31 +16,35 @@ export const Route = createRootRoute({
                 content: 'width=device-width, initial-scale=1',
             },
             {
-                title: 'TanStack Start Starter',
+                title: 'Tether',
             },
             {
                 name: 'description',
-                content: 'The initial website template for DE4 ERO project - Group: Five Good Humans'
+                content: 'Protect your valuables with state of the art, split-second theft detection'
             },
             {
                 property: 'og:title',
-                content: 'Five Good Humans'
+                content: 'Tether'
             },
             {
                 property: 'og:description',
-                content: 'The initial website template for DE4 ERO project - Group: Five Good Humans'
+                content: 'Protect your valuables with state of the art, split-second theft detection'
             },
             {
                 property: 'og:image',
-                content: 'https://fgh.donutsloth.net/logo-long.svg'
+                content: 'https://fgh.donutsloth.net/logo-long.png'
             },
             {
                 property: 'og:image:type',
-                content: 'image/svg'
+                content: 'image/png'
             },
             {
                 property: 'og:logo',
-                content: 'https://fgh.donutsloth.net/logo.svg'
+                content: 'https://fgh.donutsloth.net/logo.png'
+            },
+            {
+                property: 'og:logo:type',
+                content: 'image/png'
             },
             {
                 property: 'og:url',
@@ -74,7 +79,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         </head>
         <body>
         <Header />
-        {children}
+        <main className="min-h-[85vh]">
+            {children}
+        </main>
+        <Footer />
         <Scripts />
         </body>
         </html>

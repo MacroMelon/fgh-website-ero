@@ -1,14 +1,7 @@
-export default function Header() {
+export default function Footer() {
     return (
-        <header className="h-20 py-4 px-6 flex flex-row justify-stretch bg-linear-to-b from-[#F1F2FF] to-[#FFFFFF]">
-            <a href="/">
-                <img
-                    className="flex-none self-center"
-                    src="/logo-long.svg"
-                    alt="Cool Tether Logo"
-                />
-            </a>
-            <div className="text-[#3D4EE8] font-bold flex flex-row gap-12 ml-auto mb-1 self-end">
+        <footer className="mt-auto self-end flex bg-[#222433]">
+            <div className="text-white flex flex-col px-8 py-6 gap-6">
                 <a href="/getting-started">
                     Getting Started
                 </a>
@@ -25,6 +18,6 @@ export default function Header() {
                     Validation
                 </a>
             </div>
-        </header>
+        </footer>
     )
 }
