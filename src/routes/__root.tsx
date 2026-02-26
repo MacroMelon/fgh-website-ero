@@ -1,6 +1,4 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import Header from '../components/Header'
 
@@ -33,15 +31,15 @@ export const Route = createRootRoute({
             },
             {
                 property: 'og:image',
-                content: 'https://fgh.donutsloth.net/logo.png'
+                content: 'https://fgh.donutsloth.net/logo-long.svg'
             },
             {
                 property: 'og:image:type',
-                content: 'image/png'
+                content: 'image/svg'
             },
             {
                 property: 'og:logo',
-                content: 'https://fgh.donutsloth.net/logo.png'
+                content: 'https://fgh.donutsloth.net/logo.svg'
             },
             {
                 property: 'og:url',
@@ -59,8 +57,8 @@ export const Route = createRootRoute({
             },
             {
                 rel: 'icon',
-                type: 'image/png',
-                href: '/logo.png',
+                type: 'image/svg',
+                href: '/logo.svg',
             }
         ],
     }),
@@ -77,17 +75,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <body>
         <Header />
         {children}
-        <TanStackDevtools
-            config={{
-                position: 'bottom-right',
-            }}
-            plugins={[
-                {
-                    name: 'Tanstack Router',
-                    render: <TanStackRouterDevtoolsPanel />,
-                },
-            ]}
-        />
         <Scripts />
         </body>
         </html>
