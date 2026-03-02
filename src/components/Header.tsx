@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <header className="h-20 py-2 pl-6 pr-8 flex flex-row">
+        <header className="h-16 py-2 pl-6 pr-8 flex flex-row">
             <a href="/" className="flex-none">
                 <img
                     className="self-center h-full py-1"
@@ -8,7 +8,7 @@ export default function Header() {
                     alt="Cool Tether Logo"
                 />
             </a>
-            <div className="text-[#3D4EE8] text-[1.32rem] font-outfit font-bold flex flex-row gap-12 ml-auto mt-2 self-start">
+            <div className="text-[#3D4EE8] text-[1.1rem] font-outfit font-bold flex flex-row gap-12 ml-auto mt-2 self-center">
                 <a href="/">
                     Home
                 </a>
