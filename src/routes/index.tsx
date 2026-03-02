@@ -68,6 +68,28 @@ function App() {
                     </p>
                 </div>
             </div>
+            <div className="mx-14 my-12 gap-32">
+                <div className="flex md:h-[30rem] md:gap-24">
+                    {/*Image*/}
+                    <div className="invisible md:visible aspect-square bg-gray-300 rounded-2xl">
+
+                    </div>
+                    <div className="mt-auto flex flex-col gap-12">
+                        <p className="font-outfit font-bold tracking-wide text-[3.2rem]/12">
+                            Tether turns silent theft into a
+                            <span className="text-[#3D4EE8]"> visible moment </span>
+                            you can react to
+                        </p>
+                        <p className="font-inter text-[1.3rem]">
+                            Tether monitors the safety of your belongings and notifies you on the central device
+                            immediately when something happens. <br />
+                            <br />
+                            Whether you choose to contact the police or intervene, you can act right away
+                            when theft occurs, giving you a higher chance of recovering your items.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
