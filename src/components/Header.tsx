@@ -1,25 +1,25 @@
 export default function Header() {
     return (
-        <header className="h-32 py-6 pl-6 pr-14 flex flex-row justify-stretch bg-linear-to-b from-[#F1F2FF] to-[#FFFFFF]">
+        <header className="h-20 py-2 pl-6 pr-8 flex flex-row">
             <a href="/" className="flex-none">
                 <img
-                    className="self-center h-full"
+                    className="self-center h-full py-1"
                     src="/logo-long.svg"
                     alt="Cool Tether Logo"
                 />
             </a>
-            <div className="text-[#3D4EE8] text-2xl font-instrument-sans font-bold tracking-wide flex flex-row gap-12 ml-auto mb-1 self-end">
+            <div className="text-[#3D4EE8] text-[1.32rem] font-outfit font-bold flex flex-row gap-12 ml-auto mt-2 self-start">
+                <a href="/">
+                    Home
+                </a>
                 <a href="/getting-started">
-                    Getting Started
+                    Tutorials
                 </a>
                 <a href="/about">
-                    About Us
+                    About
                 </a>
                 <a href="/contact">
-                    Contact Us
-                </a>
-                <a href="/blog">
-                    Blog
+                    Contact
                 </a>
                 <a href="/validation-private">
                     Validation
