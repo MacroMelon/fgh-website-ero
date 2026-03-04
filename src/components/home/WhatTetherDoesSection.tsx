@@ -8,11 +8,11 @@ export default function(){
 
                     </div>
                     <div className="mt-auto flex flex-col gap-12">
-                        <p className="font-outfit font-bold tracking-wide text-[3.2rem]/12">
+                        <h3 className="font-outfit font-bold tracking-wide text-[3.2rem]/13">
                             Tether turns silent theft into a
                             <span className="text-[#3D4EE8]"> visible moment </span>
                             you can react to
-                        </p>
+                        </h3>
                         <p className="font-inter text-[1.3rem]">
                             Tether monitors the safety of your belongings and notifies you on the central device
                             immediately when something happens.<br />
@@ -24,10 +24,10 @@ export default function(){
                 </div>
                 <div className="flex lg:h-120 lg:gap-24">
                     <div className="mt-auto flex flex-col gap-12">
-                        <p className="font-outfit font-bold tracking-wide text-[3.2rem]/12">
+                        <h3 className="font-outfit font-bold tracking-wide text-[3.2rem]/13">
                             A loud deterrent alarm to make thieves
                             <span className="text-[#3D4EE8]"> abandon your belongings </span>
-                        </p>
+                        </h3>
                         <p className="font-inter text-[1.3rem]">
                             The alarm makes theft too risky to continue, forcing thieves to abandon the item.
                         </p>
@@ -43,9 +43,9 @@ export default function(){
 
                     </div>
                     <div className="mt-auto flex flex-col gap-12">
-                        <p className="font-outfit font-bold tracking-wide text-[3.2rem]/12">
+                        <h3 className="font-outfit font-bold tracking-wide text-[3.2rem]/13">
                             Find your belongings back
-                        </p>
+                        </h3>
                         <p className="font-inter text-[1.3rem]">
                             The Tether app tracks and shows the locations of all your belongings with Tether tags.<br />
                             <br />

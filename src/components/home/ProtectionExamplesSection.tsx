@@ -29,20 +29,23 @@ const imgTextSectionArray = [
 export default function (){
     return(
         <div className="max-w-140 lg:max-w-full mx-auto">
-            <div className="font-outfit font-bold text-[3.7rem]/15 tracking-wide mx-10">
+            <h2 className="font-outfit font-bold text-[3.2rem]/13 tracking-wide mx-10">
                 Tether protects your belongings in any situations
-            </div>
+            </h2>
             <div className="mt-18 flex flex-col lg:grid lg:grid-cols-2 gap-24 lg:gap-2 mx-18 lg:mx-12">
                 {imgTextSectionArray.map((element, index) => {
                     const isEvenRow = !((index + 1) % 4) || !((index + 2) % 4);
                     return (
-                        <div className="flex flex-col text-center lg:even:flex-row lg:odd:flex-row-reverse gap-6 lg:gap-0 lg:odd:text-left lg:even:text-right lg:h-52">
+                        <div
+                            className="flex flex-col text-center lg:even:flex-row lg:odd:flex-row-reverse gap-6 lg:gap-0 lg:odd:text-left lg:even:text-right lg:h-52"
+                            key={index}
+                        >
                             <img
                                 className="h-full"
                                 src={element.image}
                                 alt={element.imAlttext}
                             />
-                            <div className={"text-[1.8rem]/8 lg:text-[1.2rem]/5 w-full font-light font-outfit " + (isEvenRow ? "lg:mt-auto" : "lg:mb-auto")}>
+                            <div className={"text-[1.8rem]/8 lg:text-[1.3rem]/5.5 w-full font-light font-outfit " + (isEvenRow ? "lg:mt-auto" : "lg:mb-auto")}>
                                 {element.text}
                             </div>
                         </div>

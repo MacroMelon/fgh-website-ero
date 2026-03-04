@@ -25,12 +25,12 @@ export default function(){
             </div>
             <div className="absolute flex flex-col self-center gap-24 invisible"
             >
-                <div className="text-white md:text-[6.2rem]/20 sm:text-[5.4rem]/18 text-[4.4rem]/15 text-center font-outfit font-bold tracking-wider visible">
+                <h1 className="text-white md:text-[6.2rem]/20 sm:text-[5.4rem]/18 text-[4.4rem]/15 text-center font-outfit font-bold tracking-wider visible">
                     Theft <br /> Protection <br /> Stickers
-                </div>
-                <div className="m-auto text-white font-[Nico_Moji] text-[2.8rem] text-center visible">
+                </h1>
+                <p className="m-auto text-white font-[Nico_Moji] text-[2.8rem] text-center visible">
                     Tether
-                </div>
+                </p>
             </div>
         </div>
     )
