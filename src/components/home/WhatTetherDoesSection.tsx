@@ -4,11 +4,11 @@ export default function(){
             <div className="mx-14 flex flex-col gap-40 lg:gap-40">
                 <div className="flex lg:gap-24">
                     {/*Image*/}
-                    <div className="invisible lg:visible lg:h-120 my-auto aspect-square bg-gray-300 rounded-2xl">
+                    <div className="hidden lg:block lg:h-120 my-auto aspect-square bg-gray-300 rounded-2xl">
 
                     </div>
                     <div className="mt-auto flex flex-col gap-12">
-                        <h3 className="font-outfit font-bold tracking-wide text-[3.2rem]/13">
+                        <h3 className="font-outfit text-big-mobile lg:text-big">
                             Tether turns silent theft into a
                             <span className="text-[#3D4EE8]"> visible moment </span>
                             you can react to
@@ -24,7 +24,7 @@ export default function(){
                 </div>
                 <div className="flex lg:h-120 lg:gap-24">
                     <div className="mt-auto flex flex-col gap-12">
-                        <h3 className="font-outfit font-bold tracking-wide text-[3.2rem]/13">
+                        <h3 className="font-outfit text-big-mobile lg:text-big">
                             A loud deterrent alarm to make thieves
                             <span className="text-[#3D4EE8]"> abandon your belongings </span>
                         </h3>
@@ -33,17 +33,17 @@ export default function(){
                         </p>
                     </div>
                     {/*Image*/}
-                    <div className="invisible lg:visible h-full aspect-square bg-gray-300 rounded-2xl">
+                    <div className="hidden lg:block h-full aspect-square bg-gray-300 rounded-2xl">
 
                     </div>
                 </div>
                 <div className="flex lg:h-120 lg:gap-24">
                     {/*Image*/}
-                    <div className="invisible lg:visible h-full aspect-square bg-gray-300 rounded-2xl">
+                    <div className="hidden lg:block h-full aspect-square bg-gray-300 rounded-2xl">
 
                     </div>
                     <div className="mt-auto flex flex-col gap-12">
-                        <h3 className="font-outfit font-bold tracking-wide text-[3.2rem]/13">
+                        <h3 className="font-outfit text-big-mobile lg:text-big">
                             Find your belongings back
                         </h3>
                         <p className="font-inter text-[1.3rem]">

@@ -5,6 +5,7 @@ import FeaturesSection from "@/components/home/FeaturesSection.tsx";
 import WhatTetherDoesSection from "@/components/home/WhatTetherDoesSection.tsx";
 import ProtectionExamplesSection from "@/components/home/ProtectionExamplesSection.tsx";
 import TechnologySection from "@/components/home/TechnologySection.tsx";
+import JoinUsSection from "@/components/home/JoinUsSection.tsx";
 
 export const Route = createFileRoute('/')({ component: App })
 
@@ -22,6 +23,7 @@ function App() {
                 <ProtectionExamplesSection />
                 <TechnologySection />
             </div>
+            <JoinUsSection />
         </div>
     )
 }
