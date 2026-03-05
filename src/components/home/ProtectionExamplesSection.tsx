@@ -1,7 +1,7 @@
-import imgText1 from '../../assets/home-page/image_text_section/1.png'
-import imgText2 from '../../assets/home-page/image_text_section/2.png'
-import imgText3 from '../../assets/home-page/image_text_section/3.png'
-import imgText4 from '../../assets/home-page/image_text_section/4.png'
+import imgText1 from '@/assets/home-page/image_text_section/1.png'
+import imgText2 from '@/assets/home-page/image_text_section/2.png'
+import imgText3 from '@/assets/home-page/image_text_section/3.png'
+import imgText4 from '@/assets/home-page/image_text_section/4.png'
 
 const imgTextSectionArray = [
     {

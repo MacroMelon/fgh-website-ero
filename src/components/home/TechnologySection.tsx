@@ -1,4 +1,4 @@
-import explodedViewImage from '../../assets/home-page/exploded_view.png'
+import explodedViewImage from '@/assets/home-page/exploded_view.png'
 
 export default function (){
     return(

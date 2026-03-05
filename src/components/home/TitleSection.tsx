@@ -1,7 +1,7 @@
-import deviceImg1 from '../../assets/home-page/first_section/1.png'
-import deviceImg2 from '../../assets/home-page/first_section/2.png'
-import deviceImg3 from '../../assets/home-page/first_section/3.png'
-import deviceImg4 from '../../assets/home-page/first_section/4.png'
+import deviceImg1 from '@/assets/home-page/first_section/1.png'
+import deviceImg2 from '@/assets/home-page/first_section/2.png'
+import deviceImg3 from '@/assets/home-page/first_section/3.png'
+import deviceImg4 from '@/assets/home-page/first_section/4.png'
 
 const firstSectionImgArray = [deviceImg1, deviceImg2, deviceImg3, deviceImg4];
 export default function(){

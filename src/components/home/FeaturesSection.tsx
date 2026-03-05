@@ -1,4 +1,4 @@
-import middleImage from '../../assets/home-page/middle_image.png'
+import middleImage from '@/assets/home-page/middle_image.png'
 
 export default function(){
     return (
