@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <header className="h-16 py-2 pl-6 pr-8 flex flex-row">
+        <header className="h-16 py-2 pl-6 pr-8 flex flex-row sticky top-0 z-40 bg-white border-b-2 border-[#3D4EE8]">
             <a href="/" className="flex-none">
                 <img
                     className="self-center h-full py-1"
