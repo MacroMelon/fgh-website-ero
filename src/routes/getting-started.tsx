@@ -10,7 +10,6 @@ export const Route = createFileRoute('/getting-started')({
 const drawStepsInColumns = (steps : Array<{title: string, image: string, imgAlt: string, text: string, large: boolean}>) : Array<ReactElement> => {
 
     const drawSingleStep = (step: {title: string, image: string, imgAlt: string, text: string, large: boolean}, stepNum: number) : ReactElement => {
-        console.log(step);
         return (
             <div className="lg:flex lg:flex-col lg:w-1/2 lg:mx-8 lg:my-0">
                 <img
