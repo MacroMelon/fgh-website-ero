@@ -29,7 +29,7 @@ const imgTextSectionArray = [
 export default function (){
     return(
         <div className="max-w-140 lg:max-w-full lg:mx-18 mx-auto">
-            <h2 className="font-outfit text-big-mobile lg:text-big mx-10 lg:mx-0 lg:w-180">
+            <h2 className="font-outfit text-big mx-10 lg:mx-0 lg:w-180">
                 Tether protects your belongings in any situations
             </h2>
             <div className="mt-18 flex flex-col lg:grid lg:grid-cols-2 gap-24 lg:gap-2 mx-18 lg:mx-0">

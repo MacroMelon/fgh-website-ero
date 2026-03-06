@@ -25,6 +25,16 @@
   --text-big-mobile--line-height: 1;
   --text-big-mobile--letter-spacing: 0.05rem;
   --text-big-mobile--font-weight: 700;
+
+  --text-small: 1.4rem;
+  --text-small--line-height: 1;
+  --text-small--letter-spacing: 0rem;
+  --text-small--font-weight: 300;
+
+  --text-small-mobile: 1.4rem;
+  --text-small-mobile--line-height: 1;
+  --text-small-mobile--letter-spacing: 0.0rem;
+  --text-small-mobile--font-weight: 300;
 }
 
 body {

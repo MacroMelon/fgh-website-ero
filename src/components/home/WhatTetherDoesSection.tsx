@@ -8,7 +8,7 @@ export default function(){
 
                     </div>
                     <div className="mt-auto flex flex-col gap-12">
-                        <h3 className="font-outfit text-big-mobile lg:text-big">
+                        <h3 className="font-outfit text-big">
                             Tether turns silent theft into a
                             <span className="text-[#3D4EE8]"> visible moment </span>
                             you can react to
@@ -24,7 +24,7 @@ export default function(){
                 </div>
                 <div className="flex lg:h-120 lg:gap-24">
                     <div className="mt-auto flex flex-col gap-12">
-                        <h3 className="font-outfit text-big-mobile lg:text-big">
+                        <h3 className="font-outfit text-big">
                             A loud deterrent alarm to make thieves
                             <span className="text-[#3D4EE8]"> abandon your belongings </span>
                         </h3>
@@ -43,7 +43,7 @@ export default function(){
 
                     </div>
                     <div className="mt-auto flex flex-col gap-12">
-                        <h3 className="font-outfit text-big-mobile lg:text-big">
+                        <h3 className="font-outfit text-big">
                             Find your belongings back
                         </h3>
                         <p className="font-inter text-[1.3rem]">
