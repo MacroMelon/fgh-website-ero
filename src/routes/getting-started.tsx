@@ -113,10 +113,10 @@ function RouteComponent() {
                     return (
                         <div className="my-6"
                              key={sectionIndex}>
-                            <h2 className="flex mx-14 font-outfit text-[#3D4EE8] font-bold tracking-wide text-big lg:pb-4 lg:border-b-2 lg:border-[#555FD0]">
+                            <h2 className="flex mx-12 font-outfit text-[#3D4EE8] font-bold tracking-wide text-[2.6rem]/12 lg:text-big lg:pb-4 lg:border-b-2 lg:border-[#555FD0]">
                                 {section.sectionTitle}
                             </h2>
-                            <div className="mt-14 mx-10">
+                            <div className="mt-14 lg:mx-10">
                                 {drawStepsInColumns(section.steps).map((element) => element)}
                             </div>
                         </div>
