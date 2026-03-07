@@ -77,8 +77,8 @@ const drawStepsInColumns = (steps : Array<{title: string, image: string, imgAlt:
 
 function RouteComponent() {
     return (
-        <div className="flex flex-row max-w-140 lg:max-w-full mx-auto pt-12">
-            <div className="hidden lg:block mb-10 border border-[#D9D9D9] shadow-md shadow-gray-500 ml-6 w-lg">
+        <div className="flex flex-row max-w-140 lg:max-w-full mx-auto pt-12 pb-10">
+            <div className="hidden lg:block mb-auto sticky top-15 pb-18 h-[96dvh] overflow-y-scroll border border-[#D9D9D9] shadow-md shadow-gray-500 ml-6 w-lg">
                 {stepData.map((section, sectionIndex) => {
                     return (
                         <div className="mx-6 mt-14"
