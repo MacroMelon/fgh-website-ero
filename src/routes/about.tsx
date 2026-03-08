@@ -1,6 +1,15 @@
 import { createFileRoute } from '@tanstack/react-router'
 import teamImg from '@/assets/about/team.png'
 
+import maasLogo from '@/assets/about/partners/maas360.png'
+import chinesePoliceLogo from '@/assets/about/partners/chinese_police.png'
+import imperialCollgeLogo from '@/assets/about/partners/imperial_collge.png'
+import jamfLogo from '@/assets/about/partners/jamf.png'
+import metPoliceLogo from '@/assets/about/partners/met_police.png'
+import msIntuneLogo from '@/assets/about/partners/microsft_intune.png'
+import samsungLogo from '@/assets/about/partners/samsung.png'
+import UCLLogo from '@/assets/about/partners/ucl.png'
+
 export const Route = createFileRoute('/about')({
   component: RouteComponent,
 })
@@ -30,6 +39,41 @@ const teamData = [
         role: "CTO",
         name: "Tharindu",
         contributions: ["Website implementation", "Research","Technical / Electronics shenanigans"]
+    },
+]
+
+const partnerData = [
+    {
+        name: "University College London",
+        logo: UCLLogo
+    },
+    {
+        name: "MaaS360",
+        logo: maasLogo
+    },
+    {
+        name: "British Metropolitan Police",
+        logo: metPoliceLogo
+    },
+    {
+        name: "Microsoft Intune",
+        logo: msIntuneLogo
+    },
+    {
+        name: "Imperial College",
+        logo: imperialCollgeLogo
+    },
+    {
+        name: "Samsung",
+        logo: samsungLogo
+    },
+    {
+        name: "jamf",
+        logo: jamfLogo
+    },
+    {
+        name: "Chinese Police",
+        logo: chinesePoliceLogo
     },
 ]
 
@@ -95,6 +139,31 @@ function RouteComponent() {
                   anxiety by making stealth theft noticeable in real time, helping people feel more confident
                   about the safety of their belongings.
               </p>
+              <a
+                  className="px-10 py-3 border-5 rounded-2xl border-[#303991] text-[#303991] text-[3rem] font-outfit"
+                  href="/contact"
+              >
+                  Contact
+              </a>
+          </div>
+          <div>
+              <h2>
+                  Developed with insights from
+              </h2>
+              <div>
+                  {partnerData.map((partner, index) => (
+                      <div
+                          className=""
+                          key={index}
+                      >
+                          <img
+                              className=""
+                              src={partner.logo}
+                              alt={partner.name + " logo"}
+                          />
+                      </div>
+                  ))}
+              </div>
           </div>
       </div>
   )
