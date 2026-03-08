@@ -96,19 +96,8 @@ function RouteComponent() {
                   <img
                       className=""
                       src={teamImg}
+                      alt="Group picture of team"
                   />
-                  <div className="flex rounded-xl lg:rounded-full lg:bg-[#4758F2] bg-[#303991] text-white font-raleway font-black italic lg:not-italic text-[1rem] lg:text-[2rem] lg:px-4">
-                      {teamData.map((person, index) => {
-                          return (
-                              <p
-                                  key={index}
-                                  className="mx-auto"
-                              >
-                                  {person.role}
-                              </p>
-                          )
-                      })}
-                  </div>
                   <div className="hidden lg:flex">
                       {teamData.map((person, index) => {
                           return (
@@ -116,9 +105,14 @@ function RouteComponent() {
                                   key={index}
                                   className="mx-auto"
                               >
-                                  <p className="">
-                                      {person.name}
-                                  </p>
+                                  <div>
+                                      <p className="">
+                                          {person.name}
+                                      </p>
+                                      <p className="">
+                                          {person.role}
+                                      </p>
+                                  </div>
                                   <ul className="list-disc">
                                       {person.contributions.map((contribution, contributuionIndex) => (
                                           <li key={contributuionIndex}>
