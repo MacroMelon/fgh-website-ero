@@ -7,7 +7,7 @@ export const Route = createFileRoute('/contact')({
 function RouteComponent() {
     return (
         <div className="flex flex-col">
-            <div className="bg-[url(/contact/banner.png)] bg-cover aspect-4311/759">
+            <div className="flex flex-col bg-[url(/contact/banner.png)] bg-cover aspect-4311/759 pl-40 pb-10 font-outfit text-big text-white justify-end">
                 Contact Us
             </div>
             <form className="mx-auto mt-24 mb-52">
@@ -60,7 +60,7 @@ function RouteComponent() {
                     </label>
                 </div>
                 <button
-                    className="mt-20 rounded-full py-2 w-52 bg-[#3D4EE8] text-white font-inter font-bold text-[1.5rem] text-center"
+                    className="mt-16 rounded-full py-2 w-52 bg-[#3D4EE8] text-white font-inter font-bold text-[1.5rem] text-center"
                     type="submit"
                 >
                     Submit
