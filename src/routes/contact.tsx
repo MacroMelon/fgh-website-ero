@@ -6,43 +6,61 @@ export const Route = createFileRoute('/contact')({
 
 function RouteComponent() {
     return (
-        <div>
+        <div className="flex flex-col">
             <div className="bg-[url(/contact/banner.png)] bg-cover aspect-4311/759">
                 Contact Us
             </div>
-            <form>
-                <div className="flex">
-                    <label className="w-1/3">
+            <form className="mx-auto mt-24 mb-52">
+                <div className="flex gap-12">
+                    <label className=" my-4 w-1/3 font-bold font-inter text-[1.5rem]">
                         <div>First Name</div>
-                        <input/>
+                        <input
+                            className="mt-2 border-2 border-[#3D4EE8] rounded-xl"
+                            type="text"
+                        />
                     </label>
-                    <label className="w-1/3">
+                    <label className=" my-4 w-1/3 font-bold font-inter text-[1.5rem]">
                         <div>Family Name</div>
-                        <input/>
+                        <input
+                            className="mt-2 border-2 border-[#3D4EE8] rounded-xl"
+                            type="text"
+                        />
                     </label>
-                    <label className="w-1/3">
-                        <div>First Name</div>
-                        <input/>
+                    <label className=" my-4 w-1/3 font-bold font-inter text-[1.5rem]">
+                        <div>Organisation</div>
+                        <input
+                            className="mt-2 border-2 border-[#3D4EE8] rounded-xl"
+                            type="text"
+                        />
                     </label>
                 </div>
-                <div className="flex">
-                    <label className="w-2/3">
+                <div className="flex gap-12">
+                    <label className=" my-4 w-2/3 font-bold font-inter text-[1.5rem]">
                         <div>Email</div>
-                        <input/>
+                        <input
+                            className="mt-2 w-full border-2 border-[#3D4EE8] rounded-xl"
+                            type="email"
+                        />
                     </label>
-                    <label className="w-1/3">
-                        <div>Family Name</div>
-                        <input/>
+                    <label className=" my-4 w-1/3 font-bold font-inter text-[1.5rem]">
+                        <div>Phone number</div>
+                        <input
+                            className="mt-2 border-2 border-[#3D4EE8] rounded-xl"
+                            type="tel"
+                        />
                     </label>
                 </div>
                 <div>
-                    <label>
+                    <label className=" my-4 w-2/3 font-bold font-inter text-[1.5rem]">
                         <div>Message</div>
-                        <input/>
+                        <input
+                            className="mt-2 w-full h-96 border-2 border-[#3D4EE8] rounded-xl"
+                            type="text"
+                        />
                     </label>
                 </div>
                 <button
-                    className=""
+                    className="mt-20 rounded-full py-2 w-52 bg-[#3D4EE8] text-white font-inter font-bold text-[1.5rem] text-center"
                     type="submit"
                 >
                     Submit
