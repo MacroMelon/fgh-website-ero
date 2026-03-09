@@ -1,10 +1,10 @@
 export default [
     {
         title: "Is your data thief proof?",
-        image: "/blog/is-your-data-theft-proof/thumbnail.png",
+        image: "/blog/is-your-data-thief-proof/thumbnail.png",
         imgAlt: "Padlock with cool random text overlay",
         description: "Many people worry a thief might be able to hack into stolen devices and steal your personal details.",
-        url: "/blog/is-your-data-theft-proof"
+        url: "/blog/is-your-data-thief-proof"
     },
     {
         title: "How to prevent pickpocketing",

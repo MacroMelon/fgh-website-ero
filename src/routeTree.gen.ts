@@ -17,7 +17,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog/index'
 import { Route as BlogPhoneTheftAtAnAllTimeHighRouteImport } from './routes/blog/phone-theft-at-an-all-time-high'
-import { Route as BlogIsYourDataTheftProofRouteImport } from './routes/blog/is-your-data-theft-proof'
+import { Route as BlogIsYourDataThiefProofRouteImport } from './routes/blog/is-your-data-thief-proof'
 import { Route as BlogHowToPreventPickpocketingRouteImport } from './routes/blog/how-to-prevent-pickpocketing'
 import { Route as BlogHasYourPhoneBeenStolenRouteImport } from './routes/blog/has-your-phone-been-stolen'
 import { Route as BlogAreYouAPickpocketTargetRouteImport } from './routes/blog/are-you-a-pickpocket-target'
@@ -63,10 +63,10 @@ const BlogPhoneTheftAtAnAllTimeHighRoute =
     path: '/blog/phone-theft-at-an-all-time-high',
     getParentRoute: () => rootRouteImport,
   } as any)
-const BlogIsYourDataTheftProofRoute =
-  BlogIsYourDataTheftProofRouteImport.update({
-    id: '/blog/is-your-data-theft-proof',
-    path: '/blog/is-your-data-theft-proof',
+const BlogIsYourDataThiefProofRoute =
+  BlogIsYourDataThiefProofRouteImport.update({
+    id: '/blog/is-your-data-thief-proof',
+    path: '/blog/is-your-data-thief-proof',
     getParentRoute: () => rootRouteImport,
   } as any)
 const BlogHowToPreventPickpocketingRoute =
@@ -98,7 +98,7 @@ export interface FileRoutesByFullPath {
   '/blog/are-you-a-pickpocket-target': typeof BlogAreYouAPickpocketTargetRoute
   '/blog/has-your-phone-been-stolen': typeof BlogHasYourPhoneBeenStolenRoute
   '/blog/how-to-prevent-pickpocketing': typeof BlogHowToPreventPickpocketingRoute
-  '/blog/is-your-data-theft-proof': typeof BlogIsYourDataTheftProofRoute
+  '/blog/is-your-data-thief-proof': typeof BlogIsYourDataThiefProofRoute
   '/blog/phone-theft-at-an-all-time-high': typeof BlogPhoneTheftAtAnAllTimeHighRoute
   '/blog': typeof BlogIndexRoute
 }
@@ -112,7 +112,7 @@ export interface FileRoutesByTo {
   '/blog/are-you-a-pickpocket-target': typeof BlogAreYouAPickpocketTargetRoute
   '/blog/has-your-phone-been-stolen': typeof BlogHasYourPhoneBeenStolenRoute
   '/blog/how-to-prevent-pickpocketing': typeof BlogHowToPreventPickpocketingRoute
-  '/blog/is-your-data-theft-proof': typeof BlogIsYourDataTheftProofRoute
+  '/blog/is-your-data-thief-proof': typeof BlogIsYourDataThiefProofRoute
   '/blog/phone-theft-at-an-all-time-high': typeof BlogPhoneTheftAtAnAllTimeHighRoute
   '/blog': typeof BlogIndexRoute
 }
@@ -127,7 +127,7 @@ export interface FileRoutesById {
   '/blog/are-you-a-pickpocket-target': typeof BlogAreYouAPickpocketTargetRoute
   '/blog/has-your-phone-been-stolen': typeof BlogHasYourPhoneBeenStolenRoute
   '/blog/how-to-prevent-pickpocketing': typeof BlogHowToPreventPickpocketingRoute
-  '/blog/is-your-data-theft-proof': typeof BlogIsYourDataTheftProofRoute
+  '/blog/is-your-data-thief-proof': typeof BlogIsYourDataThiefProofRoute
   '/blog/phone-theft-at-an-all-time-high': typeof BlogPhoneTheftAtAnAllTimeHighRoute
   '/blog/': typeof BlogIndexRoute
 }
@@ -143,7 +143,7 @@ export interface FileRouteTypes {
     | '/blog/are-you-a-pickpocket-target'
     | '/blog/has-your-phone-been-stolen'
     | '/blog/how-to-prevent-pickpocketing'
-    | '/blog/is-your-data-theft-proof'
+    | '/blog/is-your-data-thief-proof'
     | '/blog/phone-theft-at-an-all-time-high'
     | '/blog'
   fileRoutesByTo: FileRoutesByTo
@@ -157,7 +157,7 @@ export interface FileRouteTypes {
     | '/blog/are-you-a-pickpocket-target'
     | '/blog/has-your-phone-been-stolen'
     | '/blog/how-to-prevent-pickpocketing'
-    | '/blog/is-your-data-theft-proof'
+    | '/blog/is-your-data-thief-proof'
     | '/blog/phone-theft-at-an-all-time-high'
     | '/blog'
   id:
@@ -171,7 +171,7 @@ export interface FileRouteTypes {
     | '/blog/are-you-a-pickpocket-target'
     | '/blog/has-your-phone-been-stolen'
     | '/blog/how-to-prevent-pickpocketing'
-    | '/blog/is-your-data-theft-proof'
+    | '/blog/is-your-data-thief-proof'
     | '/blog/phone-theft-at-an-all-time-high'
     | '/blog/'
   fileRoutesById: FileRoutesById
@@ -186,7 +186,7 @@ export interface RootRouteChildren {
   BlogAreYouAPickpocketTargetRoute: typeof BlogAreYouAPickpocketTargetRoute
   BlogHasYourPhoneBeenStolenRoute: typeof BlogHasYourPhoneBeenStolenRoute
   BlogHowToPreventPickpocketingRoute: typeof BlogHowToPreventPickpocketingRoute
-  BlogIsYourDataTheftProofRoute: typeof BlogIsYourDataTheftProofRoute
+  BlogIsYourDataThiefProofRoute: typeof BlogIsYourDataThiefProofRoute
   BlogPhoneTheftAtAnAllTimeHighRoute: typeof BlogPhoneTheftAtAnAllTimeHighRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
@@ -249,11 +249,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogPhoneTheftAtAnAllTimeHighRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/is-your-data-theft-proof': {
-      id: '/blog/is-your-data-theft-proof'
-      path: '/blog/is-your-data-theft-proof'
-      fullPath: '/blog/is-your-data-theft-proof'
-      preLoaderRoute: typeof BlogIsYourDataTheftProofRouteImport
+    '/blog/is-your-data-thief-proof': {
+      id: '/blog/is-your-data-thief-proof'
+      path: '/blog/is-your-data-thief-proof'
+      fullPath: '/blog/is-your-data-thief-proof'
+      preLoaderRoute: typeof BlogIsYourDataThiefProofRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/how-to-prevent-pickpocketing': {
@@ -290,7 +290,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogAreYouAPickpocketTargetRoute: BlogAreYouAPickpocketTargetRoute,
   BlogHasYourPhoneBeenStolenRoute: BlogHasYourPhoneBeenStolenRoute,
   BlogHowToPreventPickpocketingRoute: BlogHowToPreventPickpocketingRoute,
-  BlogIsYourDataTheftProofRoute: BlogIsYourDataTheftProofRoute,
+  BlogIsYourDataThiefProofRoute: BlogIsYourDataThiefProofRoute,
   BlogPhoneTheftAtAnAllTimeHighRoute: BlogPhoneTheftAtAnAllTimeHighRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
