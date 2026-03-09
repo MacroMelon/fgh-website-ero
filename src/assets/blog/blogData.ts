@@ -28,7 +28,7 @@ export default [
         url: "/blog/phone-theft-at-an-all-time-high"
     },
     {
-        title: "Has your phone’s been stolen?",
+        title: "Has your phone been stolen?",
         image: "/blog/has-your-phone-been-stolen/thumbnail.png",
         imgAlt: "An image of a phone being pickpocketed out of a coat pocket",
         description: "Don’t panic, we will walk you through the steps you should take.",

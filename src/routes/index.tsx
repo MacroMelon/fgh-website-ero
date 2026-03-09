@@ -13,7 +13,7 @@ function App() {
     return (
         <div>
             <TitleSection />
-            <video className="w-screen" controls>
+            <video className="w-screen" poster="/video_thumbnail.jpg" controls>
                 <source src="/Tether.mp4" type="video/mp4"/>
                 video
             </video>
