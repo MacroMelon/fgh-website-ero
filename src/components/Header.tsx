@@ -8,7 +8,7 @@ export default function Header() {
                     alt="Cool Tether Logo"
                 />
             </a>
-            <div className="hidden md:flex md:flex-row text-[#3D4EE8] text-[1.1rem] font-outfit font-bold gap-12 ml-auto mt-2 self-center">
+            <div className="hidden md:flex md:flex-row text-[#3D4EE8] text-[1.4rem] font-outfit font-bold gap-12 ml-auto mt-2 self-center">
                 <a href="/about">
                     About
                 </a>

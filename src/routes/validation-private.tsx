@@ -5,5 +5,9 @@ export const Route = createFileRoute('/validation-private')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/validation-private"!</div>
+  return (
+      <div>
+        Submitted as pdf due to lack of time
+      </div>
+  )
 }

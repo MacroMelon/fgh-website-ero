@@ -28,7 +28,7 @@ const teamData = [
     {
         role: "CEO",
         name: "Maxim",
-        contributions: ["He's the CEO, he does everything!"]
+        contributions: ["Design lead lead lead", "CAD Renders"]
     },
     {
         role: "CIO",
@@ -38,7 +38,7 @@ const teamData = [
     {
         role: "CTO",
         name: "Tharindu",
-        contributions: ["Website implementation", "Research","Technical / Electronics shenanigans"]
+        contributions: ["Website implementation", "Electronics"]
     },
 ]
 
@@ -81,8 +81,8 @@ function RouteComponent() {
   return (
       <div>
           <div className="flex flex-col bg-linear-[180deg,white_0%,white_50%,#FFF5FD_70%,#D7DAFF]">
-              <h1 className="font-outfit text-big mx-auto">
-                <span className="text-[#303991]">
+              <h1 className="mt-36 font-outfit text-big mx-auto">
+                  <span className="text-[#303991]">
                     Hello
                 </span>
                   <span className="text-[#555FD0]">
@@ -92,30 +92,33 @@ function RouteComponent() {
                     We’re Tether!
                 </span>
               </h1>
-              <div>
+              <div className="flex flex-col mx-auto w-250 mt-28">
                   <img
                       className=""
                       src={teamImg}
                       alt="Group picture of team"
                   />
-                  <div className="hidden lg:flex">
+                  <div className="hidden lg:flex mt-4">
                       {teamData.map((person, index) => {
                           return (
                               <div
                                   key={index}
-                                  className="mx-auto"
+                                  className="mx-auto flex-1"
                               >
-                                  <div>
-                                      <p className="">
+                                  <div className="text-center font-black font-outfit text-[#364AFF]">
+                                      <p className="text-[1.9rem]">
                                           {person.name}
                                       </p>
-                                      <p className="">
+                                      <p className="text-[1.3rem]">
                                           {person.role}
                                       </p>
                                   </div>
-                                  <ul className="list-disc">
+                                  <ul className="list-disc list-outside mt-4 font-outfit text-[1rem]/5 text-[#303991]">
                                       {person.contributions.map((contribution, contributuionIndex) => (
-                                          <li key={contributuionIndex}>
+                                          <li
+                                              className="ml-16 px-2"
+                                              key={contributuionIndex}
+                                          >
                                               {contribution}
                                           </li>
                                       ))}
@@ -125,7 +128,7 @@ function RouteComponent() {
                       })}
                   </div>
               </div>
-              <p className="lg:text-center font-outfit lg:text-[2.4rem]/12 lg:text-[#303991]">
+              <p className="mx-auto max-w-300 mt-22 p-5 lg:text-center font-outfit text-small text-[#303991]">
                   We are a team of five Design Engineering students at Imperial College London.
                   At our university, students often leave their belongings in classrooms, where items can be
                   stolen without being noticed. As a result, many people feel anxious when leaving their
@@ -134,24 +137,25 @@ function RouteComponent() {
                   about the safety of their belongings.
               </p>
               <a
-                  className="px-10 py-3 border-5 rounded-2xl border-[#303991] text-[#303991] text-[3rem] font-outfit"
+                  title="See how to get started with Tether"
+                  className="flex mx-auto mt-28 mb-24 py-1.5 self-center justify-center w-84 min-w-64 rounded-2xl  border-[#303991] border-6 text-[#303991] font-medium font-outfit text-[1.9rem] line-clamp-1"
                   href="/contact"
               >
                   Contact
               </a>
           </div>
-          <div>
-              <h2>
+          <div className="mx-18 my-36">
+              <h2 className="font-outfit text-big text-[#3D4EE8]">
                   Developed with insights from
               </h2>
-              <div>
+              <div className="flex gap-4 mt-20">
                   {partnerData.map((partner, index) => (
                       <div
-                          className=""
+                          className="flex flex-1 px-6 aspect-square bg-linear-[180deg,#FFF9FD,#E4E6FF]"
                           key={index}
                       >
                           <img
-                              className=""
+                              className="my-auto"
                               src={partner.logo}
                               alt={partner.name + " logo"}
                           />
