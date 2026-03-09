@@ -9,7 +9,7 @@ export const Route = createFileRoute('/blog/')({
 function RouteComponent() {
     return (
         <div>
-            <div className="bg-linear-[180deg,#D8DBFF_0%,#F9EDFF_27%,#FFFFFF_65%] px-20 py-32">
+            <div className="bg-linear-[180deg,#D8DBFF_0%,#F9EDFF_27%,#FFFFFF_65%] px-12 md:px-20 py-32">
                 <h1 className="font-outfit text-[#4353E9] text-big">
                     Blog
                 </h1>
@@ -30,7 +30,7 @@ function RouteComponent() {
                         {'<'}
                     </div>
                     <div className="flex">
-                        <a>
+                        <a className="mx-8">
                             1
                         </a>
                     </div>
