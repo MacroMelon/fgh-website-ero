@@ -6,7 +6,7 @@ export default function({ title, introduction, recomendedReading, children } : {
     return (
         <div className="flex flex-col mb-20">
             <div className="bg-linear-[180deg,#D8DBFF_0%,#F9EDFF_27%,#FFFFFF_65%] h-84" />
-            <h1 className="mx-auto px-15 md:px-22 font-koulen text-center text-[6rem]/22">
+            <h1 className="mx-auto px-15 md:px-22 font-koulen text-center text-[6rem]/22 break-all">
                 {title}
             </h1>
             <p className="mx-auto mt-8 px-15 md:px-22 font-outfit text-center text-small">
@@ -15,7 +15,7 @@ export default function({ title, introduction, recomendedReading, children } : {
             <div>
                 {children}
             </div>
-            <div className="mt-32 flex flex-col">
+            <div className="mt-28 flex flex-col">
                 <h2 className="px-15 md:px-22 font-outfit text-big text-black/80">
                     Be a part of the change
                 </h2>

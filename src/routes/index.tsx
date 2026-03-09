@@ -14,7 +14,7 @@ function App() {
         <div>
             <TitleSection />
             <video className="w-screen" controls>
-                <source src="/video.mp4" type="video/mp4"/>
+                <source src="/Tether.mp4" type="video/mp4"/>
                 video
             </video>
             <div className="flex flex-col lg:my-40 my-24 gap-40">
