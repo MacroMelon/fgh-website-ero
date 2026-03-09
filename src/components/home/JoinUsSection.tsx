@@ -9,11 +9,11 @@ export default function(){
                     Join us to protect belongings and make it clear that stealing won’t be easy anymore.
                 </p>
                 <a
-                    className="flex mx-auto mt-12 py-2 w-80 rounded-3xl bg-[#33343D]"
-                    href="/contact"
+                    className="flex mx-auto mt-12 py-2 w-80 rounded-3xl bg-black"
+                    href="/join-beta"
                 >
                     <p className="font-outfit mx-auto text-white text-[1.8rem] line-clamp-1">
-                        Contact Us
+                        Join Beta Testers
                     </p>
                 </a>
             </div>

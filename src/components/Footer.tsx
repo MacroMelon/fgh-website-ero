@@ -2,14 +2,14 @@ export default function Footer() {
     return (
         <footer className="mt-auto self-end px-16 py-10 flex bg-[#222433]">
             <div className="text-white font-instrument-sans text-lg flex flex-col gap-4">
-                <a href="/getting-started">
-                    Getting Started
-                </a>
                 <a href="/about">
-                    About Us
+                    About
                 </a>
                 <a href="/contact">
-                    Contact Us
+                    Contact
+                </a>
+                <a href="/getting-started">
+                    Tutorials
                 </a>
                 <a href="/blog">
                     Blog

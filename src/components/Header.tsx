@@ -9,17 +9,17 @@ export default function Header() {
                 />
             </a>
             <div className="hidden md:flex md:flex-row text-[#3D4EE8] text-[1.1rem] font-outfit font-bold gap-12 ml-auto mt-2 self-center">
-                <a href="/">
-                    Home
-                </a>
-                <a href="/getting-started">
-                    Tutorials
-                </a>
                 <a href="/about">
                     About
                 </a>
                 <a href="/contact">
                     Contact
+                </a>
+                <a href="/getting-started">
+                    Tutorials
+                </a>
+                <a href="/blog">
+                    Blog
                 </a>
                 <a href="/validation-private">
                     Validation
