@@ -9,22 +9,27 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WhatIsTetherRouteImport } from './routes/what-is-tether'
 import { Route as ValidationPrivateRouteImport } from './routes/validation-private'
+import { Route as JoinBetaRouteImport } from './routes/join-beta'
 import { Route as GettingStartedRouteImport } from './routes/getting-started'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogPhoneTheftAtAnAllTimeHighRouteImport } from './routes/blog/phone-theft-at-an-all-time-high'
+import { Route as BlogIsYourDataTheftProofRouteImport } from './routes/blog/is-your-data-theft-proof'
+import { Route as BlogHowToPreventPickpocketingRouteImport } from './routes/blog/how-to-prevent-pickpocketing'
+import { Route as BlogHasYourPhoneBeenStolenRouteImport } from './routes/blog/has-your-phone-been-stolen'
+import { Route as BlogAreYouAPickpocketTargetRouteImport } from './routes/blog/are-you-a-pickpocket-target'
 
-const WhatIsTetherRoute = WhatIsTetherRouteImport.update({
-  id: '/what-is-tether',
-  path: '/what-is-tether',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ValidationPrivateRoute = ValidationPrivateRouteImport.update({
   id: '/validation-private',
   path: '/validation-private',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JoinBetaRoute = JoinBetaRouteImport.update({
+  id: '/join-beta',
+  path: '/join-beta',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GettingStartedRoute = GettingStartedRouteImport.update({
@@ -37,11 +42,6 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogRoute = BlogRouteImport.update({
-  id: '/blog',
-  path: '/blog',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -52,89 +52,159 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogPhoneTheftAtAnAllTimeHighRoute =
+  BlogPhoneTheftAtAnAllTimeHighRouteImport.update({
+    id: '/blog/phone-theft-at-an-all-time-high',
+    path: '/blog/phone-theft-at-an-all-time-high',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogIsYourDataTheftProofRoute =
+  BlogIsYourDataTheftProofRouteImport.update({
+    id: '/blog/is-your-data-theft-proof',
+    path: '/blog/is-your-data-theft-proof',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogHowToPreventPickpocketingRoute =
+  BlogHowToPreventPickpocketingRouteImport.update({
+    id: '/blog/how-to-prevent-pickpocketing',
+    path: '/blog/how-to-prevent-pickpocketing',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogHasYourPhoneBeenStolenRoute =
+  BlogHasYourPhoneBeenStolenRouteImport.update({
+    id: '/blog/has-your-phone-been-stolen',
+    path: '/blog/has-your-phone-been-stolen',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogAreYouAPickpocketTargetRoute =
+  BlogAreYouAPickpocketTargetRouteImport.update({
+    id: '/blog/are-you-a-pickpocket-target',
+    path: '/blog/are-you-a-pickpocket-target',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/getting-started': typeof GettingStartedRoute
+  '/join-beta': typeof JoinBetaRoute
   '/validation-private': typeof ValidationPrivateRoute
-  '/what-is-tether': typeof WhatIsTetherRoute
+  '/blog/are-you-a-pickpocket-target': typeof BlogAreYouAPickpocketTargetRoute
+  '/blog/has-your-phone-been-stolen': typeof BlogHasYourPhoneBeenStolenRoute
+  '/blog/how-to-prevent-pickpocketing': typeof BlogHowToPreventPickpocketingRoute
+  '/blog/is-your-data-theft-proof': typeof BlogIsYourDataTheftProofRoute
+  '/blog/phone-theft-at-an-all-time-high': typeof BlogPhoneTheftAtAnAllTimeHighRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/getting-started': typeof GettingStartedRoute
+  '/join-beta': typeof JoinBetaRoute
   '/validation-private': typeof ValidationPrivateRoute
-  '/what-is-tether': typeof WhatIsTetherRoute
+  '/blog/are-you-a-pickpocket-target': typeof BlogAreYouAPickpocketTargetRoute
+  '/blog/has-your-phone-been-stolen': typeof BlogHasYourPhoneBeenStolenRoute
+  '/blog/how-to-prevent-pickpocketing': typeof BlogHowToPreventPickpocketingRoute
+  '/blog/is-your-data-theft-proof': typeof BlogIsYourDataTheftProofRoute
+  '/blog/phone-theft-at-an-all-time-high': typeof BlogPhoneTheftAtAnAllTimeHighRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/getting-started': typeof GettingStartedRoute
+  '/join-beta': typeof JoinBetaRoute
   '/validation-private': typeof ValidationPrivateRoute
-  '/what-is-tether': typeof WhatIsTetherRoute
+  '/blog/are-you-a-pickpocket-target': typeof BlogAreYouAPickpocketTargetRoute
+  '/blog/has-your-phone-been-stolen': typeof BlogHasYourPhoneBeenStolenRoute
+  '/blog/how-to-prevent-pickpocketing': typeof BlogHowToPreventPickpocketingRoute
+  '/blog/is-your-data-theft-proof': typeof BlogIsYourDataTheftProofRoute
+  '/blog/phone-theft-at-an-all-time-high': typeof BlogPhoneTheftAtAnAllTimeHighRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
-    | '/blog'
     | '/contact'
     | '/getting-started'
+    | '/join-beta'
     | '/validation-private'
-    | '/what-is-tether'
+    | '/blog/are-you-a-pickpocket-target'
+    | '/blog/has-your-phone-been-stolen'
+    | '/blog/how-to-prevent-pickpocketing'
+    | '/blog/is-your-data-theft-proof'
+    | '/blog/phone-theft-at-an-all-time-high'
+    | '/blog'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/blog'
     | '/contact'
     | '/getting-started'
+    | '/join-beta'
     | '/validation-private'
-    | '/what-is-tether'
+    | '/blog/are-you-a-pickpocket-target'
+    | '/blog/has-your-phone-been-stolen'
+    | '/blog/how-to-prevent-pickpocketing'
+    | '/blog/is-your-data-theft-proof'
+    | '/blog/phone-theft-at-an-all-time-high'
+    | '/blog'
   id:
     | '__root__'
     | '/'
     | '/about'
-    | '/blog'
     | '/contact'
     | '/getting-started'
+    | '/join-beta'
     | '/validation-private'
-    | '/what-is-tether'
+    | '/blog/are-you-a-pickpocket-target'
+    | '/blog/has-your-phone-been-stolen'
+    | '/blog/how-to-prevent-pickpocketing'
+    | '/blog/is-your-data-theft-proof'
+    | '/blog/phone-theft-at-an-all-time-high'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  BlogRoute: typeof BlogRoute
   ContactRoute: typeof ContactRoute
   GettingStartedRoute: typeof GettingStartedRoute
+  JoinBetaRoute: typeof JoinBetaRoute
   ValidationPrivateRoute: typeof ValidationPrivateRoute
-  WhatIsTetherRoute: typeof WhatIsTetherRoute
+  BlogAreYouAPickpocketTargetRoute: typeof BlogAreYouAPickpocketTargetRoute
+  BlogHasYourPhoneBeenStolenRoute: typeof BlogHasYourPhoneBeenStolenRoute
+  BlogHowToPreventPickpocketingRoute: typeof BlogHowToPreventPickpocketingRoute
+  BlogIsYourDataTheftProofRoute: typeof BlogIsYourDataTheftProofRoute
+  BlogPhoneTheftAtAnAllTimeHighRoute: typeof BlogPhoneTheftAtAnAllTimeHighRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/what-is-tether': {
-      id: '/what-is-tether'
-      path: '/what-is-tether'
-      fullPath: '/what-is-tether'
-      preLoaderRoute: typeof WhatIsTetherRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/validation-private': {
       id: '/validation-private'
       path: '/validation-private'
       fullPath: '/validation-private'
       preLoaderRoute: typeof ValidationPrivateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/join-beta': {
+      id: '/join-beta'
+      path: '/join-beta'
+      fullPath: '/join-beta'
+      preLoaderRoute: typeof JoinBetaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/getting-started': {
@@ -151,13 +221,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog': {
-      id: '/blog'
-      path: '/blog'
-      fullPath: '/blog'
-      preLoaderRoute: typeof BlogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -172,17 +235,64 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/phone-theft-at-an-all-time-high': {
+      id: '/blog/phone-theft-at-an-all-time-high'
+      path: '/blog/phone-theft-at-an-all-time-high'
+      fullPath: '/blog/phone-theft-at-an-all-time-high'
+      preLoaderRoute: typeof BlogPhoneTheftAtAnAllTimeHighRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/is-your-data-theft-proof': {
+      id: '/blog/is-your-data-theft-proof'
+      path: '/blog/is-your-data-theft-proof'
+      fullPath: '/blog/is-your-data-theft-proof'
+      preLoaderRoute: typeof BlogIsYourDataTheftProofRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/how-to-prevent-pickpocketing': {
+      id: '/blog/how-to-prevent-pickpocketing'
+      path: '/blog/how-to-prevent-pickpocketing'
+      fullPath: '/blog/how-to-prevent-pickpocketing'
+      preLoaderRoute: typeof BlogHowToPreventPickpocketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/has-your-phone-been-stolen': {
+      id: '/blog/has-your-phone-been-stolen'
+      path: '/blog/has-your-phone-been-stolen'
+      fullPath: '/blog/has-your-phone-been-stolen'
+      preLoaderRoute: typeof BlogHasYourPhoneBeenStolenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/are-you-a-pickpocket-target': {
+      id: '/blog/are-you-a-pickpocket-target'
+      path: '/blog/are-you-a-pickpocket-target'
+      fullPath: '/blog/are-you-a-pickpocket-target'
+      preLoaderRoute: typeof BlogAreYouAPickpocketTargetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  BlogRoute: BlogRoute,
   ContactRoute: ContactRoute,
   GettingStartedRoute: GettingStartedRoute,
+  JoinBetaRoute: JoinBetaRoute,
   ValidationPrivateRoute: ValidationPrivateRoute,
-  WhatIsTetherRoute: WhatIsTetherRoute,
+  BlogAreYouAPickpocketTargetRoute: BlogAreYouAPickpocketTargetRoute,
+  BlogHasYourPhoneBeenStolenRoute: BlogHasYourPhoneBeenStolenRoute,
+  BlogHowToPreventPickpocketingRoute: BlogHowToPreventPickpocketingRoute,
+  BlogIsYourDataTheftProofRoute: BlogIsYourDataTheftProofRoute,
+  BlogPhoneTheftAtAnAllTimeHighRoute: BlogPhoneTheftAtAnAllTimeHighRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
