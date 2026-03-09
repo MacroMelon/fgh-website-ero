@@ -13,7 +13,7 @@ function RouteComponent() {
             introduction={"These past years hundreds of people in the UK flock to the internet for advice about what to do about phone theft. The topic has become a constant sore on people’s minds, and rightly so."}
             recomendedReading={[blogData[1], blogData[2]]}
         >
-            <div>
+            <div className="h-96">
 
             </div>
         </BlogPage>

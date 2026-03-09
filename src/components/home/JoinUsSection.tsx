@@ -1,3 +1,5 @@
+import twistyTether from '@/assets/home-page/flexi.gif'
+
 export default function(){
     return (
         <div className="flex h-[150dvh] xl:h-104 xl:rounded-3xl xl:mx-24 xl:mb-36 bg-linear-to-b from-[#ECF4FF] to-[#F6F2FF] justify-center align-middle">
@@ -9,17 +11,18 @@ export default function(){
                     Join us to protect belongings and make it clear that stealing won’t be easy anymore.
                 </p>
                 <a
-                    className="flex mx-auto mt-12 py-2 w-80 rounded-3xl bg-black"
+                    className="flex mx-auto mt-12 py-3 self-center justify-center w-84 rounded-3xl bg-black font-outfit font-medium text-white text-[1.9rem] line-clamp-1"
                     href="/join-beta"
                 >
-                    <p className="font-outfit mx-auto text-white text-[1.8rem] line-clamp-1">
-                        Join Beta Testers
-                    </p>
+                    Join Beta Testers
                 </a>
             </div>
             {/*Image*/}
-            <div className="hidden xl:block bg-gray-300 h-full aspect-square rounded-2xl">
-            </div>
+            <img
+                className="hidden xl:block h-full rounded-2xl py-10 mr-10"
+                src={twistyTether}
+                alt="A GIF of the tether tag twisting along it's vertical axis"
+            />
         </div>
     )
 }

@@ -13,7 +13,7 @@ export default function(){
                             <span className="text-[#3D4EE8]"> visible moment </span>
                             you can react to
                         </h3>
-                        <p className="font-inter text-[1.3rem]">
+                        <p className="font-inter text-[1.6rem]">
                             Tether monitors the safety of your belongings and notifies you on the central device
                             immediately when something happens.<br />
                             <br />

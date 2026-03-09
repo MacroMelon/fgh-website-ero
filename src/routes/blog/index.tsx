@@ -9,23 +9,23 @@ export const Route = createFileRoute('/blog/')({
 function RouteComponent() {
     return (
         <div>
-            <div>
-                <h1>
+            <div className="bg-linear-[180deg,#D8DBFF_0%,#F9EDFF_27%,#FFFFFF_65%] px-20 py-32">
+                <h1 className="font-outfit text-[#4353E9] text-big">
                     Blog
                 </h1>
-                <p>
-                    The Tether Team is Hard at work
+                <p className="mt-6 max-w-400 font-outfit text-[2.5rem]/12 md:text-[2.8rem]/14 text-[#4353E9]">
+                    The Tether Team is hard at work providing you with the most up-to-date information on theft and pickpocketing.
                 </p>
             </div>
-            <div>
-                <div>
+            <div className="mx-22">
+                <div className="mt-12 flex flex-wrap justify-center gap-24">
                     {blogData.map((blogPage, index) => (
                         <div key={index}>
                             <BlogPageCard blogPageDetails={blogPage} />
                         </div>
                     ))}
                 </div>
-                <div className="flex">
+                <div className="mt-10 mb-20 flex justify-center font-inter text-[2.8rem] text-[#2E39AD]">
                     <div>
                         {'<'}
                     </div>
