@@ -15,7 +15,7 @@ export default function({ title, introduction, recomendedReading, children } : {
             <div>
                 {children}
             </div>
-            <div className="flex flex-col">
+            <div className="mt-32 flex flex-col">
                 <h2 className="px-15 md:px-22 font-outfit text-big text-black/80">
                     Be a part of the change
                 </h2>
