@@ -9,6 +9,33 @@ import victGenImg from "@/assets/blog/are-you-a-pickpocket-target/victGen.png"
 
 export const Route = createFileRoute('/blog/are-you-a-pickpocket-target')({
     component: RouteComponent,
+    head: () => ({
+        meta: [
+            {
+                title: "Are You a Pickpocket Target?"
+            },
+            {
+                name: 'description',
+                content: "Some people have been pickpocketed multiple times, while others have never experienced it. Learn what may make you or your friend their target, and when and where to be careful."
+            },
+            {
+                property: 'og:title',
+                content: "Are You a Pickpocket Target?"
+            },
+            {
+                property: 'og:description',
+                content: "Some people have been pickpocketed multiple times, while others have never experienced it. Learn what may make you or your friend their target, and when and where to be careful."
+            },
+            {
+                property: 'og:image',
+                content: "https://tether.donutsloth.net/blog/are-you-a-pickpocket-target/thumbnail.png"
+            },
+            {
+                property: 'og:image:type',
+                content: 'image/png'
+            }
+        ]
+    })
 })
 
 function RouteComponent() {

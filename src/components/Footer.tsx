@@ -18,7 +18,7 @@ export default function Footer() {
                     Validation
                 </a>
             </div>
-            <div className="ml-auto mt-4">
+            <div className="ml-auto mt-4 w-25 md:w-auto">
                 <img
                     src="/logo-long-white.svg"
                     alt="Logo"

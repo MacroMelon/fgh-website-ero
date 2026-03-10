@@ -1,13 +1,13 @@
-import imgText1 from '@/assets/home-page/image_text_section/1.png'
-import imgText2 from '@/assets/home-page/image_text_section/2.png'
-import imgText3 from '@/assets/home-page/image_text_section/3.png'
-import imgText4 from '@/assets/home-page/image_text_section/4.png'
+import imgText1 from '@/assets/home-page/image_text_section/1.svg'
+import imgText2 from '@/assets/home-page/image_text_section/2.svg'
+import imgText3 from '@/assets/home-page/image_text_section/3.svg'
+import imgText4 from '@/assets/home-page/image_text_section/4.svg'
 
 const imgTextSectionArray = [
     {
         image: imgText1,
         imAlttext: "",
-        text: "Protect your belongings on busy streets and crowded spaces."
+        text: "Protect your belongings in crowded spaces."
     },
     {
         image: imgText2,
@@ -22,30 +22,31 @@ const imgTextSectionArray = [
     {
         image: imgText4,
         imAlttext: "",
-        text: "Protect your bike parking in public."
+        text: "Even when they are left in public"
     },
 ]
 
 export default function (){
     return(
-        <div className="max-w-140 lg:max-w-full lg:mx-18 mx-auto">
-            <h2 className="font-outfit text-big mx-10 lg:mx-0 lg:w-180">
+        <div className="max-w-140 lg:max-w-180 xl:max-w-full xl:mx-18 mx-auto">
+            <h2 className="font-outfit text-big mx-10 xl:mx-0 xl:max-w-240">
                 Tether protects your belongings in any situations
             </h2>
-            <div className="mt-18 flex flex-col lg:grid lg:grid-cols-2 gap-24 lg:gap-2 mx-18 lg:mx-0">
+            <div className="mt-32 flex flex-col xl:grid xl:grid-cols-2 gap-24 xl:gap-2 mx-18 xl:mx-0">
                 {imgTextSectionArray.map((element, index) => {
                     const isEvenRow = !((index + 1) % 4) || !((index + 2) % 4);
                     return (
                         <div
-                            className="flex flex-col text-center lg:even:flex-row lg:odd:flex-row-reverse gap-6 lg:gap-0 lg:odd:text-left lg:even:text-right lg:h-52"
+                            className="flex flex-col text-center xl:even:flex-row xl:odd:flex-row-reverse xl:odd:mr-12 xl:even:ml-12 gap-6 xl:gap-0 xl:max-h-90 xl:min-h-30"
                             key={index}
                         >
                             <img
-                                className="h-full"
+                                className="flex-3"
                                 src={element.image}
                                 alt={element.imAlttext}
                             />
-                            <div className={"text-[1.8rem]/8 lg:text-[1.3rem]/5.5 w-full font-light font-outfit " + (isEvenRow ? "lg:mt-auto" : "lg:mb-auto")}>
+                            <div className={"hidden xl:block flex-2 min-w-30 border-[#3D4EE8] w-full " + (isEvenRow ? " border-b-2 mb-4" : " border-t-2 mt-4")}/>
+                            <div className={"mx-auto xl:mx-0 text-[1.8rem]/8 xl:text-[2.1rem]/10 max-w-85 font-light font-outfit" + (isEvenRow ? " xl:mt-auto" : " xl:mb-auto") + (index % 2 ? " xl:text-right" : " xl:text-left")}>
                                 {element.text}
                             </div>
                         </div>

@@ -4,6 +4,25 @@ import blogData from "@/assets/blog/blogData.ts";
 
 export const Route = createFileRoute('/blog/')({
     component: RouteComponent,
+    head: () => ({
+        meta: [
+            {
+                title: "Tether Blog"
+            },
+            {
+                name: 'description',
+                content: "Learn more about what the Tether team has been up to and why we are passionate about developing novel solutions for the safety of your personal belongings."
+            },
+            {
+                property: 'og:title',
+                content: "Tether Blog"
+            },
+            {
+                property: 'og:description',
+                content: "Learn more about what the Tether team has been up to and why we are passionate about developing novel solutions for the safety of your personal belongings."
+            }
+        ]
+    })
 })
 
 function RouteComponent() {

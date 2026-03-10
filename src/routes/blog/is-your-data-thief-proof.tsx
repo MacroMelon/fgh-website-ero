@@ -12,6 +12,33 @@ import devsecImg from "@/assets/blog/is-your-data-thief-proof/device_settings.pn
 
 export const Route = createFileRoute('/blog/is-your-data-thief-proof')({
     component: RouteComponent,
+    head: () => ({
+        meta: [
+            {
+                title: "Is your data thief proof?"
+            },
+            {
+                name: 'description',
+                content: "Getting your device stolen is stressful, especially considering the sensitive data that it might contain. Here’s all you need to know about how safe your data is, and what you can do about it."
+            },
+            {
+                property: 'og:title',
+                content: "Is your data thief proof?"
+            },
+            {
+                property: 'og:description',
+                content: "Getting your device stolen is stressful, especially considering the sensitive data that it might contain. Here’s all you need to know about how safe your data is, and what you can do about it."
+            },
+            {
+                property: 'og:image',
+                content: "https://tether.donutsloth.net/blog/is-your-data-thief-proof/thumbnail.png"
+            },
+            {
+                property: 'og:image:type',
+                content: 'image/png'
+            }
+        ]
+    })
 })
 
 const expertData = [

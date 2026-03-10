@@ -6,8 +6,8 @@ export const Route = createFileRoute('/validation-private')({
 
 function RouteComponent() {
   return (
-      <div>
-        Submitted as pdf due to lack of time
+      <div className="font-outfit text-big text-center mt-36 text-[#4353E9]">
+        Submitted as PDF
       </div>
   )
 }

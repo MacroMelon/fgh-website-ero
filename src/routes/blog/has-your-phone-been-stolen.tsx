@@ -4,6 +4,33 @@ import blogData from "@/assets/blog/blogData.ts";
 
 export const Route = createFileRoute('/blog/has-your-phone-been-stolen')({
     component: RouteComponent,
+    head: () => ({
+        meta: [
+            {
+                title: "Has your Device been stolen?"
+            },
+            {
+                name: 'description',
+                content: "Here is what you should do when your phone has been stolen."
+            },
+            {
+                property: 'og:title',
+                content: "Has your Device been stolen?"
+            },
+            {
+                property: 'og:description',
+                content: "Here is what you should do when your phone has been stolen."
+            },
+            {
+                property: 'og:image',
+                content: "https://tether.donutsloth.net/blog/has-your-phone-been-stolen/thumbnail.png"
+            },
+            {
+                property: 'og:image:type',
+                content: 'image/png'
+            }
+        ]
+    })
 })
 
 function RouteComponent() {

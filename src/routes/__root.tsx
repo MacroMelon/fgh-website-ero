@@ -20,7 +20,7 @@ export const Route = createRootRoute({
             },
             {
                 name: 'description',
-                content: 'Protect your valuables with state of the art, split-second theft detection'
+                content: 'Are you are worried about your belongings being stolen?  Get a Tether Sticker to secure them. An all in one solution with a powerful automatic anti-theft alarm integrated with Bluetooth tracking.'
             },
             {
                 property: 'og:title',
@@ -28,11 +28,11 @@ export const Route = createRootRoute({
             },
             {
                 property: 'og:description',
-                content: 'Protect your valuables with state of the art, split-second theft detection'
+                content: 'Are you are worried about your belongings being stolen?  Get a Tether Sticker to secure them. An all in one solution with a powerful automatic anti-theft alarm integrated with Bluetooth tracking.'
             },
             {
                 property: 'og:image',
-                content: 'https://tether.donutsloth.net/logo-long.png'
+                content: 'https://tether.donutsloth.net/tether_sticker.png'
             },
             {
                 property: 'og:image:type',

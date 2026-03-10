@@ -5,6 +5,25 @@ import {ReactElement} from "react";
 
 export const Route = createFileRoute('/getting-started')({
     component: RouteComponent,
+    head: () => ({
+        meta: [
+            {
+                title: "Get started with tether"
+            },
+            {
+                name: 'description',
+                content: "Get a Tether Sticker to secure your devices involves some setup. Lets walk through what you need to do."
+            },
+            {
+                property: 'og:title',
+                content: "Get started with tether"
+            },
+            {
+                property: 'og:description',
+                content: "Get a Tether Sticker to secure your devices involves some setup. Lets walk through what you need to do."
+            }
+        ]
+    })
 })
 
 const drawStepsInColumns = (steps : Array<{title: string, image: string, imgAlt: string, text: string, large: boolean}>) : Array<ReactElement> => {

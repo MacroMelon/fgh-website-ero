@@ -9,6 +9,33 @@ import theftDataImg from "@/assets/blog/phone-theft-at-an-all-time-high/theft_da
 
 export const Route = createFileRoute('/blog/phone-theft-at-an-all-time-high')({
     component: RouteComponent,
+    head: () => ({
+        meta: [
+            {
+                title: "Phone theft at an all time high"
+            },
+            {
+                name: 'description',
+                content: "These past years hundreds of people in the UK flock to the internet for advice about what to do about phone theft. The topic has become a constant sore on people’s minds, and rightly so."
+            },
+            {
+                property: 'og:title',
+                content: "Phone theft at an all time high"
+            },
+            {
+                property: 'og:description',
+                content: "These past years hundreds of people in the UK flock to the internet for advice about what to do about phone theft. The topic has become a constant sore on people’s minds, and rightly so."
+            },
+            {
+                property: 'og:image',
+                content: "https://tether.donutsloth.net/blog/phone-theft-at-an-all-time-high/thumbnail.png"
+            },
+            {
+                property: 'og:image:type',
+                content: 'image/png'
+            }
+        ]
+    })
 })
 
 function RouteComponent() {

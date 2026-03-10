@@ -7,6 +7,33 @@ import tetherImg from "@/assets/blog/how-to-prevent-pickpocketing/tether.png"
 
 export const Route = createFileRoute('/blog/how-to-prevent-pickpocketing')({
     component: RouteComponent,
+    head: () => ({
+        meta: [
+            {
+                title: "How to prevent pickpocketing"
+            },
+            {
+                name: 'description',
+                content: "If you are worried about pickpocketing, here are your options. We walk through what is available and what will best suit your needs."
+            },
+            {
+                property: 'og:title',
+                content: "How to prevent pickpocketing"
+            },
+            {
+                property: 'og:description',
+                content: "If you are worried about pickpocketing, here are your options. We walk through what is available and what will best suit your needs."
+            },
+            {
+                property: 'og:image',
+                content: "https://tether.donutsloth.net/blog/how-to-prevent-pickpocketing/thumbnail.png"
+            },
+            {
+                property: 'og:image:type',
+                content: 'image/png'
+            }
+        ]
+    })
 })
 
 function RouteComponent() {

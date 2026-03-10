@@ -4,18 +4,18 @@ export default function(){
     //22%
     return (
         <div className="overflow-x-clip">
-            <div className="my-24 px-24 py-3 rotate-[-5.4deg] bg-linear-[185.4deg,white_52%,#F9EDFF_64%,#D8DBFF_90%] -ml-16 -mr-16">
-                <div className="flex w-full">
+            <div className="my-24 px-10 xl:px-24 py-3 xl:rotate-[-5.4deg] xl:bg-linear-[185.4deg,white_52%,#F9EDFF_64%,#D8DBFF_90%] xl:-ml-16 xl:-mr-16">
+                <div className="flex flex-col xl:flex-row w-full">
                     <img
-                        className="w-1/2"
+                        className="xl:w-1/2 rotate-0 mx-auto xl:rotate-[5.4deg]"
                         src={tetherCascadeImage}
                         alt="A line of tether tags fading into the distance"
                     />
-                    <div className="flex flex-col mt-auto mb-24">
-                        <h2 className="mx-auto font-outfit text-big">
+                    <div className="flex flex-col mt-22 xl:mt-auto mb-24">
+                        <h2 className="hidden xl:block mx-auto font-outfit text-big">
                             Get your tether !
                         </h2>
-                        <div className="flex gap-9 font-medium font-outfit text-[1.9rem]">
+                        <div className="flex flex-col xl:flex-row gap-2 xl:gap-9 font-medium font-outfit text-[1.9rem]">
                             <a
                                 title="Join the tether Beta program"
                                 className="flex mx-auto mt-12 py-3 self-center justify-center w-84 min-w-64 rounded-3xl bg-black text-white line-clamp-1"
